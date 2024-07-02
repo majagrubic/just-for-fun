@@ -6,13 +6,17 @@
 
 .gridCell {
   flex: 0 1 33%;
-  border: 1px solid green;
+  border: 1px solid darkgray;
   width: 120px;
   height: 120px;
   align-items: center;
   line-height: 60px;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.gridCell:hover {
+  background-color: #dbc2c4;
 }
 
 .gridCell:nth-child(1),
@@ -35,19 +39,9 @@
   border-right: none;
 }
 
-.gridCell:active {
-  background-color: lightgray;
-  border: 2px solid green;
-}
-
-.gridCell:not(:first-child) {
-  //border-left: none;
-}
-
 .divX {
   height: 100px;
   width: 100px;
-  background-color: #fff;
   border-radius: 5px;
   position: relative;
   margin: auto;
@@ -61,17 +55,13 @@
   right: 0;
   content: '\274c';
   font-size: 50px;
-  color: #fff;
+  color: #e5e7eb;
   line-height: 120px;
   text-align: center;
 }
 
 .circle {
-  border-radius: 50%;
-  border: 5px solid blue;
-  height: 60px;
-  width: 60px;
+  @apply h-16 w-16 border-2 border-blue-500 rounded-full flex items-center justify-center text-center;
   line-height: 120px;
-  background: white;
   margin: 25px auto auto auto;
 }

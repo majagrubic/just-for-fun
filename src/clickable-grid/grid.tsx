@@ -65,5 +65,14 @@ export function Grid({ rows, cols }: { rows: number; cols: number }) {
       });
   };
 
-  return <div>{generateRows()}</div>;
+  return (
+    <div className="flex flex-col">
+      <h2>
+        Click on a cell. It will turn red and then get back to normal after 10
+        seconds.
+      </h2>
+      <br />
+      <div style={{ margin: 'auto' }}>{generateRows()}</div>
+    </div>
+  );
 }
