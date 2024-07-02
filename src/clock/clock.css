@@ -1,0 +1,15 @@
+.clock-container {
+  text-align: center;
+  vertical-align: center;
+  line-height: 88pt;
+}
+
+.container {
+  display: flex;
+  font-size: 86pt;
+  font-weight: bold;
+}
+
+.time_unit {
+  margin-right: 15px;
+}

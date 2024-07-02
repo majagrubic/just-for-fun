@@ -1,0 +1,77 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.gridCell {
+  flex: 0 1 33%;
+  border: 1px solid green;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  line-height: 60px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.gridCell:nth-child(1),
+.gridCell:nth-child(2),
+.gridCell:nth-child(3) {
+  border-top: none;
+}
+
+.gridCell:nth-child(7),
+.gridCell:nth-child(8),
+.gridCell:nth-child(9) {
+  border-bottom: none;
+}
+
+.gridCell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.gridCell:nth-child(3n) {
+  border-right: none;
+}
+
+.gridCell:active {
+  background-color: lightgray;
+  border: 2px solid green;
+}
+
+.gridCell:not(:first-child) {
+  //border-left: none;
+}
+
+.divX {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+}
+
+.divX:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '\274c';
+  font-size: 50px;
+  color: #fff;
+  line-height: 120px;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 5px solid blue;
+  height: 60px;
+  width: 60px;
+  line-height: 120px;
+  background: white;
+  margin: 25px auto auto auto;
+}
