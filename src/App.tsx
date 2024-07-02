@@ -4,12 +4,14 @@ import { LoadingIndicator } from './loading_indicator';
 import { Clock } from './clock';
 import { Grid as TicTacToe } from './tic-tac-toe';
 import { Grid as ClickableGrid } from './clickable-grid';
+import { ImageSlider } from './image-slider';
 
 enum Selection {
   None = 0,
   Clock = 1,
   TicTacToe,
   Grid,
+  ImageSlider = 4,
 }
 
 function App() {
@@ -45,6 +47,12 @@ function App() {
           >
             Clickable Grid
           </button>
+          <button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-lg text-lg w-80"
+            onClick={() => onClick(Selection.ImageSlider)}
+          >
+            Image Slider
+          </button>
         </div>
       )}
       {selection !== Selection.None && (
@@ -70,6 +78,11 @@ function App() {
       {selection === Selection.Grid && (
         <div className="flex">
           <ClickableGrid rows={10} cols={10} />
+        </div>
+      )}
+      {selection === Selection.ImageSlider && (
+        <div className="flex">
+          <ImageSlider />
         </div>
       )}
     </body>
