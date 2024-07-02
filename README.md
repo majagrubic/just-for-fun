@@ -2,9 +2,15 @@
 
 This is a just for fun project of various React components and playing around with CSS.
 
+# Preview
+
+Live Demo [here](https://just-for-fun-eight.vercel.app/)
+
+## Other
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Running locally
 
 In the project directory, you can run:
 

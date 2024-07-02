@@ -13,3 +13,9 @@
 .time_unit {
   margin-right: 15px;
 }
+
+.date-container {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 1.5rem;
+}
