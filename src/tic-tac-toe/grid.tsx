@@ -76,7 +76,7 @@ export const Grid = ({ size }: Props) => {
         if (content === Turn.CROSS) {
           className = 'divX';
         } else if (content === Turn.CIRCLE) {
-          className = 'circle';
+          className = 'ttt-circle';
         }
         cells.push(
           <div
